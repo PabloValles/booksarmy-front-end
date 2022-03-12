@@ -60,20 +60,50 @@
             <li><a href="#">Categorías</a></li>
             <li><a href="#">Contacto</a></li>
           </ul>
+          <div class="form-mobile" id="form-mobile">
+            <input
+              type="search"
+              name="search"
+              id="search"
+              placeholder="Buscar libors, autores, géneros..."
+            />
+            <button class="btn">
+              <i class="fas fa-search fa-lg"></i>
+            </button>
+          </div>
         </div>
       </nav>
       <div class="hero">
-        <div class="left"></div>
-        <div class="right">
+        <div class="hero__title">
           <h1>Conocé nuestros libros</h1>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-          <div class="right__btns">
+          <div class="hero__btns">
             <button class="btn btn-primary">Ver libros</button>
             <button class="btn btn-primary">Nosotros</button>
           </div>
         </div>
+        <div class="hero__img">
+          <img src="img/pratiksha-mohanty-Fxn-syKB7VU-unsplash.jpg" alt="" />
+        </div>
       </div>
     </header>
+    <main style="padding: 1rem">
+      <section class="recomendaciones">
+        <div class="container">
+          <div class="card_banner oferta">
+            <h3>Ofertas</h3>
+          </div>
+          <div class="card_banner genero">
+            <h3>Generos</h3>
+          </div>
+          <div class="card_banner vendidos">
+            <h3>Más vendidos</h3>
+          </div>
+          <div class="card_banner colecciones">
+            <h3>Colecciones</h3>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <script>
       let btnnav = document.querySelector("#btn-navbar");

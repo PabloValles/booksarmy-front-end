@@ -1,13 +1,55 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-body {
+/* Nombres reales de colores */
+html {
   font: 100% "Poppins", sans-serif;
-  color: #1b2d45;
 }
 
 body {
+  color: #1b2d45;
   background-color: #fffffe;
+  font-weight: 400;
+  line-height: 1.75;
   width: 100%;
-  overflow: hidden;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 3.052rem;
+}
+
+h2 {
+  font-size: 2.441rem;
+}
+
+h3 {
+  font-size: 1.953rem;
+}
+
+h4 {
+  font-size: 1.563rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+small,
+.text_small {
+  font-size: 0.8rem;
 }
 
 .hidden {
@@ -49,6 +91,32 @@ header {
   position: relative;
 }
 
+header .form,
+header .form-mobile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+header .form input,
+header .form-mobile input {
+  padding: 6px 12px;
+  font-size: 1rem;
+  text-align: start;
+  line-height: 24px;
+  color: #1b2d45;
+  background-color: #fff;
+  border-radius: 4px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+}
+
+header .form {
+  display: none;
+}
+
 header .navbar {
   background-color: #fffffe;
   padding: 0.5rem 1rem;
@@ -69,10 +137,6 @@ header .navbar__top-bar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -84,26 +148,6 @@ header .navbar__top-bar {
 
 header .navbar__top-bar div {
   margin: 10px 0;
-}
-
-header .navbar__top-bar .form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-bottom: 1rem;
-}
-
-header .navbar__top-bar .form input {
-  padding: 6px 12px;
-  font-size: 1rem;
-  text-align: start;
-  line-height: 24px;
-  color: #1b2d45;
-  background-color: #fff;
-  border-radius: 4px;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  outline: none;
 }
 
 header .navbar__top-bar .icons {
@@ -138,32 +182,117 @@ header .navbar__bottom-bar-mobile ul li a {
   text-decoration: none;
 }
 
-header .hero {
-  width: 100%;
-  height: 100vh;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+header .navbar__bottom-bar-mobile #form-mobile {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #fffffe;
-  background-image: url("../img/bg-hero.jpg");
+}
+
+header .hero {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #f2f4f6;
+}
+
+header .hero .hero__title {
+  text-align: center;
+}
+
+header .hero .hero__img img {
+  width: 320px;
+  border-radius: 15px;
+  border: 4px solid rgba(0, 33, 77, 0.5);
+}
+
+main .recomendaciones .card_banner {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .recomendaciones .card_banner h3 {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+main .recomendaciones .container {
+  padding: 2rem 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: (1fr)[4];
+      grid-template-rows: repeat(4, 1fr);
+  gap: 0px 0px;
+      grid-template-areas: "oferta" "genero" "vendidos" "colecciones";
+}
+
+main .recomendaciones .oferta {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: oferta;
+  background-image: url("../img/pratiksha-mohanty-Fxn-syKB7VU-unsplash.jpg");
   background-size: cover;
-  background-repeat: no-repeat;
+  height: 260px;
+}
+
+main .recomendaciones .genero {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: genero;
+  background-image: url("../img/reading-mountain.jpg");
+  background-size: cover;
+  height: 260px;
+}
+
+main .recomendaciones .vendidos {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: vendidos;
+  background-image: url("../img/vendidos.jpg");
+  background-size: cover;
+}
+
+main .recomendaciones .colecciones {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: colecciones;
+  background-image: url("../img/colection-book.jpg");
+  background-size: cover;
+  height: 260px;
 }
 
 @media (min-width: 576px) {
   .navbar__bottom-bar-mobile,
   #btn-navbar {
     display: none;
+  }
+  header .form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   header .navbar__bottom-bar {
     width: 100%;
@@ -186,6 +315,42 @@ header .hero {
     text-decoration: none;
     color: #1b2d45;
     text-transform: uppercase;
+  }
+}
+
+@media (min-width: 768px) {
+  main .recomendaciones .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+        grid-template-areas: "oferta genero vendidos" "colecciones colecciones vendidos";
+  }
+  main .recomendaciones .oferta {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: oferta;
+  }
+  main .recomendaciones .genero {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: genero;
+  }
+  main .recomendaciones .vendidos {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 3;
+    grid-area: vendidos;
+  }
+  main .recomendaciones .colecciones {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: colecciones;
   }
 }
 /*# sourceMappingURL=style.css.map */

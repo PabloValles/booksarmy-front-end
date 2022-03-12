@@ -10,6 +10,15 @@ $yellow-color: #fde24f;
 $dark-color: #1b2d45;
 $gray-color: #f2f4f6;
 
+/* Nombres reales de colores */
+$scarletRed-100: #ff5470;
+$blue-100: #1b2d45;
+$blue-200: #00214d;
+$gray-100: #fffffe;
+$gray-200: #f2f4f6;
+$greenishCyan-100: #00ebc7;
+$khaki-100: #fde24f;
+
 $grid-breakpoint-xs: 361px;
 $grid-breakpoint-sm: 576px;
 $grid-breakpoint-md: 768px;
@@ -22,8 +31,3 @@ $containers-max-widths: (
   lg: 960px,
   xl: 1140px,
 );
-
-body {
-  font: 100% $font-poppins;
-  color: $dark-color;
-}
