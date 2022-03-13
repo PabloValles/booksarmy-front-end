@@ -230,6 +230,10 @@ header .hero .hero__title {
   text-align: center;
 }
 
+header .hero .hero__img {
+  text-align: center;
+}
+
 header .hero .hero__img img {
   width: 300px;
   border-radius: 15px;
@@ -510,7 +514,7 @@ main .call-to-action__btns a {
 
 footer {
   background-color: #fffffe;
-  padding: 2rem 1rem;
+  padding: 3rem 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -579,12 +583,38 @@ footer .footer-bottom__copy {
   margin-top: 1rem;
 }
 
+/* 
+sm 576px movil
+md 768px tablet
+lg 992px desktop notebook
+xl 1200px desktop
+*/
 @media (min-width: 576px) {
+  header .hero .hero__img img {
+    width: 75%;
+    border-radius: 15px;
+  }
+  main .call-to-action {
+    margin-top: 1rem;
+    padding: 2rem 1rem;
+    height: 40vh;
+  }
+  main .call-to-action__btns {
+    width: auto;
+  }
+}
+
+@media (min-width: 768px) {
   .navbar__bottom-bar-mobile,
   #btn-navbar {
     display: none;
   }
   header .form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header .navbar__top-bar .icons {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -611,18 +641,6 @@ footer .footer-bottom__copy {
     color: #1b2d45;
     text-transform: uppercase;
   }
-  header .hero {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-}
-
-@media (min-width: 768px) {
   main .categorias .container {
     display: -ms-grid;
     display: grid;
@@ -666,6 +684,30 @@ footer .footer-bottom__copy {
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    gap: 0.4rem;
+  }
+  main .articulos__item {
+    height: 50vh;
+    border-bottom: 2px solid #c2d1d9;
+  }
+  main .articulos__card {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    width: 65%;
+  }
+  main .call-to-action {
+    height: auto;
+  }
+  main .call-to-action__descripcion {
+    margin-bottom: 2rem;
+  }
+  main .call-to-action__descripcion h4 {
+    margin-bottom: 4px;
+  }
+  main .call-to-action__btns {
+    width: auto;
+    gap: 1rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
