@@ -65,10 +65,10 @@ small,
   line-height: 1.5;
   border-radius: 0.25rem;
   border: 1px solid transparent;
-  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
 }
 
 .btn-primary {
@@ -245,7 +245,7 @@ main .categorias .container {
   -ms-grid-rows: (1fr)[4];
       grid-template-rows: repeat(4, 1fr);
   gap: 0px 0px;
-      grid-template-areas: "oferta" "genero" "vendidos" "colecciones";
+      grid-template-areas: "oferta" "genero" "vendidos" "colecciones";
 }
 
 main .categorias .oferta {
@@ -281,6 +281,67 @@ main .categorias .colecciones {
   background-image: url("../img/colection-book.jpg");
   background-size: cover;
   height: 260px;
+}
+
+main .recomendaciones__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+}
+
+main .recomendaciones__cards .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  border: 1px solid #000;
+  padding: 10px;
+}
+
+main .recomendaciones__cards .card img {
+  width: 300px;
+}
+
+main .recomendaciones__cards .card .card-footer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .recomendaciones__cards .card .card-footer .card-icons {
+  border: 1px solid #ccc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0 6px;
 }
 
 @media (min-width: 576px) {
@@ -336,7 +397,7 @@ main .categorias .colecciones {
         grid-template-rows: 1fr 1fr;
     gap: 10px 10px;
     grid-auto-flow: row;
-        grid-template-areas: "oferta genero vendidos" "colecciones colecciones vendidos";
+        grid-template-areas: "oferta genero vendidos" "colecciones colecciones vendidos";
   }
   main .categorias .oferta {
     -ms-grid-row: 1;
@@ -359,6 +420,17 @@ main .categorias .colecciones {
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-area: colecciones;
+  }
+  main .recomendaciones__cards {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 /*# sourceMappingURL=style.css.map */

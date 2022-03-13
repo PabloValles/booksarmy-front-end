@@ -229,6 +229,45 @@ main {
       height: 260px;
     }
   }
+
+  .recomendaciones {
+    &__cards {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+
+      .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        overflow: hidden;
+        border: 1px solid #000;
+        padding: 10px;
+
+        img {
+          width: 300px;
+        }
+
+        .card-footer {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+
+          .card-icons {
+            border: 1px solid #ccc;
+
+            display: flex;
+            justify-content: space-between;
+            justify-content: center;
+            align-items: center;
+            gap: 0 6px;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (min-width: $grid-breakpoint-xs) {
@@ -299,6 +338,14 @@ main {
 
       .colecciones {
         grid-area: colecciones;
+      }
+    }
+
+    .recomendaciones {
+      &__cards {
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
       }
     }
   }
