@@ -89,6 +89,22 @@ small,
           box-shadow: inset 0 3px 5px rgba(27, 45, 69, 0.125);
 }
 
+.btn-red {
+  background-color: #ff5470;
+  color: #fff;
+  border-color: #ff5470;
+}
+
+.btn-red:focus {
+  -webkit-box-shadow: 0 0 0 3px rgba(255, 84, 112, 0.25);
+          box-shadow: 0 0 0 3px rgba(255, 84, 112, 0.25);
+}
+
+.btn-red:active {
+  -webkit-box-shadow: inset 0 3px 5px rgba(255, 84, 112, 0.125);
+          box-shadow: inset 0 3px 5px rgba(255, 84, 112, 0.125);
+}
+
 header {
   position: relative;
 }
@@ -452,6 +468,115 @@ main .ofertas-increibles__slider .slider__card {
   width: 260px;
   background-image: url(../img/bg-im-260x260.jpg);
   background-size: cover;
+}
+
+main .call-to-action {
+  margin-top: 1rem;
+  padding: 3rem;
+  background-color: #f2f4f6;
+  height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+main .call-to-action__btns {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  gap: 1rem;
+}
+
+main .call-to-action__btns a {
+  text-decoration: none;
+}
+
+footer {
+  background-color: #fffffe;
+  padding: 2rem 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  gap: 2rem;
+}
+
+footer .footer-top,
+footer .footer-top__links,
+footer .footer-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+footer .footer-top__links,
+footer .footer-top__links__links,
+footer .footer-bottom__links {
+  margin-top: 1rem;
+  gap: 2rem;
+}
+
+footer .footer-top__links a,
+footer .footer-top__links__links a,
+footer .footer-bottom__links a {
+  color: #1b2d45;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+footer .footer-bottom {
+  padding: 1rem 0;
+}
+
+footer .footer-bottom__social {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+footer .footer-bottom__copy {
+  margin-top: 1rem;
 }
 
 @media (min-width: 576px) {

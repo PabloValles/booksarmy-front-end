@@ -81,6 +81,19 @@ small,
     box-shadow: inset 0 3px 5px rgba($dark-color, 0.125);
   }
 }
+.btn-red {
+  background-color: $red-color;
+  color: #fff;
+  border-color: $red-color;
+
+  &:focus {
+    box-shadow: 0 0 0 3px rgba($red-color, 0.25);
+  }
+
+  &:active {
+    box-shadow: inset 0 3px 5px rgba($red-color, 0.125);
+  }
+}
 
 header {
   position: relative;
@@ -352,6 +365,76 @@ main {
         background-image: url(../img/bg-im-260x260.jpg);
         background-size: cover;
       }
+    }
+  }
+
+  .call-to-action {
+    margin-top: 1rem;
+    padding: 3rem;
+    background-color: $gray-color;
+    height: 50vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+
+    &__btns {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      gap: 1rem;
+
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+footer {
+  background-color: $white-color;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+
+  .footer-top,
+  .footer-top__links,
+  .footer-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    &__links {
+      margin-top: 1rem; // quitar en disp. mas grandes
+      gap: 2rem;
+
+      a {
+        color: $dark-color;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  .footer-bottom {
+    padding: 1rem 0;
+    &__social {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    &__copy {
+      margin-top: 1rem;
     }
   }
 }
