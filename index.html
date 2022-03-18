@@ -15,82 +15,84 @@
 
   <body>
     <header>
-      <nav class="navbar">
-        <div class="navbar__top-bar">
-          <div class="logo">
-            <img src="img/Logo 5.svg" alt="" />
-          </div>
-          <div class="form">
-            <input
-              type="search"
-              name="search"
-              id="search"
-              placeholder="Buscar libors, autores, géneros..."
-            />
-            <button class="btn">
-              <i class="fas fa-search fa-lg"></i>
+      <div class="container">
+        <nav class="navbar">
+          <div class="navbar__top-bar">
+            <div class="logo">
+              <img src="img/Logo 5.svg" alt="" />
+            </div>
+            <div class="form">
+              <input
+                type="search"
+                name="search"
+                id="search"
+                placeholder="Buscar libors, autores, géneros..."
+              />
+              <button class="btn">
+                <i class="fas fa-search fa-lg"></i>
+              </button>
+            </div>
+            <div class="icons">
+              <i class="fa fa-shopping-cart fa-lg" aria-hidden="true"></i>
+              <i class="fa-solid fa-bell fa-lg"></i>
+              <i class="fa fa-user fa-lg" aria-hidden="true"></i>
+            </div>
+            <button class="btn btn-primary" id="btn-navbar">
+              <i class="fa-solid fa-bars"></i>
             </button>
           </div>
-          <div class="icons">
-            <i><img src="img/icon_Shop.svg" alt="" /></i>
-            <i><img src="img/icon_Notification.svg" alt="" /></i>
-            <i><img src="img/icon_User.svg" alt="" /></i>
+          <div class="navbar__bottom-bar">
+            <div class="links">
+              <a href="#">Inicio</a>
+              <a href="#">Nosotros</a>
+              <a href="#">Libros</a>
+              <a href="#">Categorías</a>
+              <a href="#">Contacto</a>
+            </div>
+            <div class="contact">
+              <a href="#"><i class="fas fa-phone fa-md"></i> telefono</a>
+              <a href="#"><i class="fas fa-mail-bulk fa-md"></i> email</a>
+            </div>
           </div>
-          <button class="btn btn-primary" id="btn-navbar">
-            <i class="fa-solid fa-bars"></i>
-          </button>
-        </div>
-        <div class="navbar__bottom-bar">
-          <div class="links">
-            <a href="#">Inicio</a>
-            <a href="#">Nosotros</a>
-            <a href="#">Libros</a>
-            <a href="#">Categorías</a>
-            <a href="#">Contacto</a>
+          <div class="navbar__bottom-bar-mobile">
+            <ul>
+              <li><a href="#">Inicio</a></li>
+              <li><a href="#">Nosotros</a></li>
+              <li><a href="#">Libros</a></li>
+              <li><a href="#">Categorías</a></li>
+              <li><a href="#">Contacto</a></li>
+            </ul>
+            <div class="form-mobile" id="form-mobile">
+              <input
+                type="search"
+                name="search"
+                id="search"
+                placeholder="Buscar libors, autores, géneros..."
+              />
+              <button class="btn">
+                <i class="fas fa-search fa-lg"></i>
+              </button>
+            </div>
           </div>
-          <div class="contact">
-            <a href="#"><i class="fas fa-phone fa-md"></i> telefono</a>
-            <a href="#"><i class="fas fa-mail-bulk fa-md"></i> email</a>
-          </div>
-        </div>
-        <div class="navbar__bottom-bar-mobile">
-          <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Nosotros</a></li>
-            <li><a href="#">Libros</a></li>
-            <li><a href="#">Categorías</a></li>
-            <li><a href="#">Contacto</a></li>
-          </ul>
-          <div class="form-mobile" id="form-mobile">
-            <input
-              type="search"
-              name="search"
-              id="search"
-              placeholder="Buscar libors, autores, géneros..."
-            />
-            <button class="btn">
-              <i class="fas fa-search fa-lg"></i>
-            </button>
-          </div>
-        </div>
-      </nav>
+        </nav>
 
-      <div class="hero">
-        <div class="hero__title">
-          <h2>Conocé nuestros libros</h2>
-          <div class="hero__btns">
-            <button class="btn btn-primary">Ver libros</button>
-            <button class="btn btn-green">Nosotros</button>
+        <div class="hero">
+          <div class="hero__title">
+            <h2>Conocé nuestros libros</h2>
+            <div class="hero__btns">
+              <button class="btn btn-primary">Ver libros</button>
+              <button class="btn btn-green">Nosotros</button>
+            </div>
           </div>
-        </div>
-        <div class="hero__img">
-          <img src="img/pratiksha-mohanty-Fxn-syKB7VU-unsplash.jpg" alt="" />
+          <div class="hero__img">
+            <img src="img/pratiksha-mohanty-Fxn-syKB7VU-unsplash.jpg" alt="" />
+          </div>
         </div>
       </div>
     </header>
 
     <main>
-      <section class="categorias">
+      <section class="container categorias">
         <h2>Categorias</h2>
         <div class="container">
           <div class="card_banner oferta">
@@ -108,7 +110,7 @@
         </div>
       </section>
 
-      <section class="recomendaciones">
+      <section class="container recomendaciones">
         <h4>Recomendaciones</h4>
         <div class="recomendaciones__cards">
           <div class="card">
@@ -222,48 +224,64 @@
       </section>
 
       <section class="ofertas-increibles">
-        <div class="ofertas-increibles__title">
-          <h2>Ofertas imperdibles .</h2>
-        </div>
+        <div class="container">
+          <div class="ofertas-increibles__title">
+            <h2>Ofertas imperdibles .</h2>
+          </div>
 
-        <div class="ofertas-increibles__slider">
-          <div class="slider__card">
-            <img src="https://via.placeholder.com/250.png/f2f4f6/bbb" alt="" />
-            <p>Precio</p>
-          </div>
-          <div class="slider__card">
-            <img src="https://via.placeholder.com/250.png/f2f4f6/bbb" alt="" />
-            <p>Precio</p>
-          </div>
-          <div class="slider__card">
-            <img src="https://via.placeholder.com/250.png/f2f4f6/bbb" alt="" />
-            <p>Precio</p>
-          </div>
-          <div class="slider__card">
-            <img src="https://via.placeholder.com/250.png/f2f4f6/bbb" alt="" />
-            <p>Precio</p>
+          <div class="ofertas-increibles__slider">
+            <div class="slider__card">
+              <img
+                src="https://via.placeholder.com/250.png/f2f4f6/bbb"
+                alt=""
+              />
+              <p>Precio</p>
+            </div>
+            <div class="slider__card">
+              <img
+                src="https://via.placeholder.com/250.png/f2f4f6/bbb"
+                alt=""
+              />
+              <p>Precio</p>
+            </div>
+            <div class="slider__card">
+              <img
+                src="https://via.placeholder.com/250.png/f2f4f6/bbb"
+                alt=""
+              />
+              <p>Precio</p>
+            </div>
+            <div class="slider__card">
+              <img
+                src="https://via.placeholder.com/250.png/f2f4f6/bbb"
+                alt=""
+              />
+              <p>Precio</p>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="call-to-action">
-        <div class="call-to-action__descripcion">
-          <h4>Queres estár al día con nuestras promociones</h4>
-          <p>Lorem ipsum dolor siasda sa deserunt illo quo</p>
-        </div>
+      <section class="important">
+        <div class="container call-to-action">
+          <div class="call-to-action__descripcion">
+            <h4>Queres estár al día con nuestras promociones</h4>
+            <p>Lorem ipsum dolor siasda sa deserunt illo quo</p>
+          </div>
 
-        <div class="call-to-action__btns">
-          <a name="" id="" class="btn btn-primary" href="#" role="button"
-            >Suscribirme</a
-          >
-          <a name="" id="" class="btn btn-red" href="#" role="button"
-            >Contacto</a
-          >
+          <div class="call-to-action__btns">
+            <a name="" id="" class="btn btn-primary" href="#" role="button"
+              >Suscribirme</a
+            >
+            <a name="" id="" class="btn btn-red" href="#" role="button"
+              >Contacto</a
+            >
+          </div>
         </div>
       </section>
     </main>
 
-    <footer>
+    <footer class="container">
       <div class="footer-top">
         <div class="footer-top__log">
           <img src="img/Logo 5.svg" alt="" />

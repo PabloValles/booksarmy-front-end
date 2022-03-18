@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-/* Nombres reales de colores */
+/** Colores **/
 .btn {
   font-size: 1rem;
   padding: 0.375rem 0.75rem;
@@ -78,7 +78,11 @@ body {
   font-weight: 400;
   line-height: 1.75;
   width: 100%;
-  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -501,10 +505,13 @@ main .ofertas-increibles__slider .slider__card p {
   margin: 0;
 }
 
+main .important {
+  background-color: #f2f4f6;
+}
+
 main .call-to-action {
   margin-top: 1rem;
   padding: 3rem;
-  background-color: #f2f4f6;
   height: 50vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -875,6 +882,9 @@ footer .footer-bottom__copy {
   header .navbar__top-bar .icons {
     display: block;
   }
+  header .navbar__top-bar .icons i {
+    margin: 0 0.3rem;
+  }
   header .navbar__bottom-bar .contact,
   header .navbar__bottom-bar .links {
     gap: 2rem;
@@ -940,10 +950,6 @@ footer .footer-bottom__copy {
 
 @media (min-width: 1200px) {
   main .articulos {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
     padding: 2rem 0;
     margin: 4rem 0;
     width: 100%;

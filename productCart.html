@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booksarmy</title>
+    <script
+      src="https://kit.fontawesome.com/79d4a4a910.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/cart.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav class="navbar">
+          <div class="navbar__top-bar">
+            <div class="logo">
+              <img src="img/Logo-white.svg" alt="" />
+            </div>
+            <div class="form">
+              <input
+                type="search"
+                name="search"
+                id="search"
+                placeholder="Buscar libors, autores, géneros..."
+              />
+              <button class="btn">
+                <i class="fas fa-search fa-lg"></i>
+              </button>
+            </div>
+            <div class="icons">
+              <i class="fa fa-shopping-cart fa-lg" aria-hidden="true"></i>
+              <i class="fa-solid fa-bell fa-lg"></i>
+              <i class="fa fa-user fa-lg" aria-hidden="true"></i>
+            </div>
+            <button class="btn btn-red" id="btn-navbar">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </div>
+          <div class="navbar__bottom-bar">
+            <div class="links">
+              <a href="#">Inicio</a>
+              <a href="#">Nosotros</a>
+              <a href="#">Libros</a>
+              <a href="#">Categorías</a>
+              <a href="#">Contacto</a>
+            </div>
+            <div class="contact">
+              <a href="#"><i class="fas fa-phone fa-md"></i> telefono</a>
+              <a href="#"><i class="fas fa-mail-bulk fa-md"></i> email</a>
+            </div>
+          </div>
+          <div class="navbar__bottom-bar-mobile">
+            <ul>
+              <li><a href="#">Inicio</a></li>
+              <li><a href="#">Nosotros</a></li>
+              <li><a href="#">Libros</a></li>
+              <li><a href="#">Categorías</a></li>
+              <li><a href="#">Contacto</a></li>
+            </ul>
+            <div class="form-mobile" id="form-mobile">
+              <input
+                type="search"
+                name="search"
+                id="search"
+                placeholder="Buscar libors, autores, géneros..."
+              />
+              <button class="btn">
+                <i class="fas fa-search fa-lg"></i>
+              </button>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <div class="hero-cart">
+        <div class="container hero-flex">
+          <div class="hero__title">
+            <img src="img/carrito/carrito.png" alt="" />
+            <h1>Carrito de compras</h1>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <script>
+      let btnnav = document.querySelector("#btn-navbar");
+      let navMobile = document.querySelector(".navbar__bottom-bar-mobile");
+      navMobile.classList.add("hidden");
+
+      btnnav.addEventListener("click", (e) => {
+        navMobile.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>

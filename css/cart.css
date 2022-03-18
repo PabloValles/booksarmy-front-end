@@ -1,0 +1,79 @@
+header {
+  position: relative;
+}
+
+header .hero-cart {
+  height: 560px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-size: cover;
+  background-position: center center;
+  background-image: url(../img/overlay.svg), url(../img/bg-hero2.jpg);
+}
+
+header .hero-cart .hero-flex {
+  padding: 0 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  color: #fff;
+}
+
+header .hero-cart .hero-flex .hero__title {
+  text-align: center;
+  padding: 0 2rem;
+}
+
+header .hero-cart .hero-flex .hero__title img {
+  display: none;
+}
+
+header .hero-cart .hero-flex .hero__title h1 {
+  font-weight: 600;
+  padding-top: 5rem;
+}
+
+@media (min-width: 720px) {
+  header .hero-cart .hero-flex {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  header .hero-cart .hero-flex .hero__title {
+    text-align: left;
+  }
+  header .hero-cart .hero-flex .hero__title img {
+    display: block;
+    width: 100px;
+  }
+  header .hero-cart .hero-flex .hero__title h1 {
+    padding-top: 1rem;
+  }
+}
+
+nav.navbar {
+  background-color: transparent;
+  color: #fff;
+}
+
+nav.navbar .navbar__bottom-bar a {
+  color: #fff;
+}
+
+nav.navbar .navbar__bottom-bar-mobile {
+  background-color: #fff;
+}
+/*# sourceMappingURL=cart.css.map */

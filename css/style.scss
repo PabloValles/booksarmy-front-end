@@ -281,10 +281,12 @@ main {
     }
   }
 
+  .important {
+    background-color: $gray-color;
+  }
   .call-to-action {
     margin-top: 1rem;
     padding: 3rem;
-    background-color: $gray-color;
     height: 50vh;
 
     display: flex;
@@ -617,6 +619,10 @@ footer {
       &__top-bar {
         .icons {
           display: block;
+
+          i {
+            margin: 0 0.3rem;
+          }
         }
       }
 
@@ -685,7 +691,6 @@ footer {
 @media (min-width: $grid-breakpoint-xl) {
   main {
     .articulos {
-      flex-direction: row;
       padding: 2rem 0;
       margin: 4rem 0;
       width: 100%;
