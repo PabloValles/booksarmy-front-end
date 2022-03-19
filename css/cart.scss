@@ -30,11 +30,13 @@ header {
           padding-top: 5rem;
           color: #fff;
         }
+        p {
+          color: #fff;
+        }
       }
 
       @include md {
         justify-content: flex-start;
-        align-items: flex-end;
         .hero__title {
           text-align: left;
 
@@ -53,7 +55,6 @@ header {
 
 nav.navbar {
   background-color: #fff;
-  color: #fff;
 
   .navbar__bottom-bar-mobile {
     background-color: #fff;

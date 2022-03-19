@@ -41,14 +41,15 @@ header .hero-cart .hero-flex .hero__title h1 {
   color: #fff;
 }
 
+header .hero-cart .hero-flex .hero__title p {
+  color: #fff;
+}
+
 @media (min-width: 720px) {
   header .hero-cart .hero-flex {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
   }
   header .hero-cart .hero-flex .hero__title {
     text-align: left;
@@ -64,7 +65,6 @@ header .hero-cart .hero-flex .hero__title h1 {
 
 nav.navbar {
   background-color: #fff;
-  color: #fff;
 }
 
 nav.navbar .navbar__bottom-bar-mobile {
