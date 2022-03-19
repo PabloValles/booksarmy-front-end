@@ -24,18 +24,26 @@
   }
 }
 
-.btn-primary {
+.btn-secondary {
   @include btn(#00214d);
   color: #fff;
 }
 
-.btn-red {
+.btn-danger {
   @include btn(#ff5470);
   color: #fff;
 }
 
-.btn-green {
-  @include btn(#00ebc7);
+.btn-success {
+  @include btn(#3edd4e);
+  color: $blue-color;
+}
+.btn-info {
+  @include btn(#147dff);
+  color: $blue-color;
+}
+.btn-warning {
+  @include btn(#fde24f);
   color: $blue-color;
 }
 

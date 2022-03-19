@@ -1,14 +1,11 @@
 @import "_mixins.scss";
+@import "_base.scss";
 
 header {
   position: relative;
   .hero-cart {
     height: 560px;
     width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
     background-size: cover;
     background-position: center center;
     background-image: url(../img/overlay.svg), url(../img/bg-hero2.jpg);
@@ -19,7 +16,7 @@ header {
       align-items: center;
       justify-content: center;
       height: 100%;
-      color: #fff;
+
       .hero__title {
         text-align: center;
         padding: 0 2rem;
@@ -31,6 +28,7 @@ header {
         h1 {
           font-weight: 600;
           padding-top: 5rem;
+          color: #fff;
         }
       }
 
@@ -54,16 +52,38 @@ header {
 }
 
 nav.navbar {
-  background-color: transparent;
+  background-color: #fff;
   color: #fff;
-
-  .navbar__bottom-bar {
-    a {
-      color: #fff;
-    }
-  }
 
   .navbar__bottom-bar-mobile {
     background-color: #fff;
+
+    .form-mobile {
+      padding: 0 1rem;
+      input#search {
+        width: 100%;
+      }
+    }
+  }
+}
+
+main {
+  section.cart-table {
+    height: 100%;
+    padding: 6rem 0;
+
+    .table-responsive {
+      margin-top: 1.5rem;
+
+      thead tr {
+        border-bottom: 2px solid $color-gray-400 !important;
+      }
+    }
+
+    #checkout {
+      @include md {
+        text-align: right;
+      }
+    }
   }
 }

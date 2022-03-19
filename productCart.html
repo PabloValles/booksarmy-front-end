@@ -10,16 +10,29 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="css/normalize.css" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/cart.css" />
   </head>
   <body>
-    <header>
+    <header class="cart-header">
       <div class="container">
         <nav class="navbar">
           <div class="navbar__top-bar">
             <div class="logo">
-              <img src="img/Logo-white.svg" alt="" />
+              <img src="img/Logo 5.svg" alt="" />
             </div>
             <div class="form">
               <input
@@ -37,7 +50,7 @@
               <i class="fa-solid fa-bell fa-lg"></i>
               <i class="fa fa-user fa-lg" aria-hidden="true"></i>
             </div>
-            <button class="btn btn-red" id="btn-navbar">
+            <button class="btn btn-primary" id="btn-navbar">
               <i class="fa-solid fa-bars"></i>
             </button>
           </div>
@@ -86,6 +99,135 @@
         </div>
       </div>
     </header>
+
+    <main>
+      <section class="cart-table">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h2>Resúmen de compras</h2>
+              <div class="table-responsive">
+                <table class="table table-striped table-hover align-middle">
+                  <thead>
+                    <tr>
+                      <th>Portada</th>
+                      <th>Descripción</th>
+                      <th>Precio unitario</th>
+                      <th>Cantidad</th>
+                      <th>Total</th>
+                      <th><i class="fa fa-trash" aria-hidden="true"></i></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td scope="row">
+                        <img
+                          src="img/carrito/portada-cart.png"
+                          alt=""
+                          width="100px"
+                        />
+                      </td>
+                      <td>Título del libro, autor...</td>
+                      <td>$ 500</td>
+                      <td>1</td>
+                      <td>$ 500</td>
+                      <td><i class="fa fa-trash" aria-hidden="true"></i></td>
+                    </tr>
+                    <tr>
+                      <td scope="row">
+                        <img
+                          src="img/carrito/portada-cart.png"
+                          alt=""
+                          width="100px"
+                        />
+                      </td>
+                      <td>Título del libro, autor...</td>
+                      <td>$ 500</td>
+                      <td>1</td>
+                      <td>$ 500</td>
+                      <td><i class="fa fa-trash" aria-hidden="true"></i></td>
+                    </tr>
+                    <tr>
+                      <td scope="row">
+                        <img
+                          src="img/carrito/portada-cart.png"
+                          alt=""
+                          width="100px"
+                        />
+                      </td>
+                      <td>Título del libro, autor...</td>
+                      <td>$ 500</td>
+                      <td>1</td>
+                      <td>$ 500</td>
+                      <td><i class="fa fa-trash" aria-hidden="true"></i></td>
+                    </tr>
+                    <tr>
+                      <td scope="row">
+                        <img
+                          src="img/carrito/portada-cart.png"
+                          alt=""
+                          width="100px"
+                        />
+                      </td>
+                      <td>Título del libro, autor...</td>
+                      <td>$ 500</td>
+                      <td>1</td>
+                      <td>$ 500</td>
+                      <td><i class="fa fa-trash" aria-hidden="true"></i></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-5">
+            <div class="col-12 col-md-6" id="pasos-seguir">
+              <h3>Pasos a seguir</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat incididunt ut labore et
+                dolore. a seguir
+              </p>
+            </div>
+            <div class="col-12 col-md-6" id="checkout">
+              <h3>Subtotal: <span>$3.500</span></h3>
+              <a href="index.html" class="link-success">Continuar comprando</a>
+              <button type="submit" class="btn btn-secondary">
+                Finalizar compra
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="container">
+      <div class="footer-top">
+        <div class="footer-top__log">
+          <img src="img/Logo 5.svg" alt="" />
+        </div>
+        <div class="footer-top__links">
+          <a href="#">Inicio</a>
+          <a href="#">Nosotros</a>
+          <a href="#">Libros</a>
+          <a href="#">Categorías</a>
+          <a href="#">Contacto</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-bottom__social">
+          <i class="fa fa-facebook fa-xl"></i>
+          <i class="fa fa-instagram fa-xl"></i>
+          <i class="fa fa-twitter fa-xl"></i>
+        </div>
+        <div class="footer-bottom__copy">
+          <p>©2022 - Booksarmy | All right reserved</p>
+        </div>
+      </div>
+    </footer>
 
     <script>
       let btnnav = document.querySelector("#btn-navbar");
