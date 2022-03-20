@@ -24,25 +24,30 @@
   }
 }
 
-.btn-secondary {
+.btn-primary-booksarmy {
+  @include btn(#00ebc7);
+  color: #00493e;
+}
+.btn-secondary-booksarmy {
   @include btn(#00214d);
   color: #fff;
 }
 
-.btn-danger {
+.btn-danger-booksarmy {
   @include btn(#ff5470);
   color: #fff;
 }
 
-.btn-success {
+.btn-success-booksarmy {
   @include btn(#3edd4e);
-  color: $blue-color;
+  color: $color-success-900;
+  font-weight: 700;
 }
-.btn-info {
+.btn-info-booksarmy {
   @include btn(#147dff);
   color: $blue-color;
 }
-.btn-warning {
+.btn-warning-booksarmy {
   @include btn(#fde24f);
   color: $blue-color;
 }

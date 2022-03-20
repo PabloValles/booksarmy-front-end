@@ -82,8 +82,10 @@ main {
     }
 
     #checkout {
+      padding-top: 1.5rem;
       @include md {
         text-align: right;
+        padding-top: 0;
       }
     }
   }

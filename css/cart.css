@@ -92,9 +92,14 @@ main section.cart-table .table-responsive thead tr {
   border-bottom: 2px solid #c4cdd5 !important;
 }
 
+main section.cart-table #checkout {
+  padding-top: 1.5rem;
+}
+
 @media (min-width: 720px) {
   main section.cart-table #checkout {
     text-align: right;
+    padding-top: 0;
   }
 }
 /*# sourceMappingURL=cart.css.map */
