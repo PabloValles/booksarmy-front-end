@@ -26,7 +26,8 @@
 
 .btn-primary-booksarmy {
   @include btn(#00ebc7);
-  color: #00493e;
+  color: #000;
+  font-weight: 500;
 }
 .btn-secondary-booksarmy {
   @include btn(#00214d);
@@ -45,11 +46,15 @@
 }
 .btn-info-booksarmy {
   @include btn(#147dff);
-  color: $blue-color;
+  color: #fff;
 }
 .btn-warning-booksarmy {
   @include btn(#fde24f);
   color: $blue-color;
+}
+.btn-gray-700-booksarmy {
+  @include btn(#454f5b);
+  color: #fff;
 }
 
 .btn-xl {

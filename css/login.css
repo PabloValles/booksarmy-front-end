@@ -122,7 +122,7 @@ main .login-img {
   transition: all 0.1s ease;
 }
 
-main .login-form form .btn-primary {
+main .login-form form button {
   margin-top: 1rem;
   border-radius: 2rem;
   width: 100%;

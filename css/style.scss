@@ -46,6 +46,14 @@ header {
 
       .icons {
         display: none;
+        a {
+          text-decoration: none;
+          color: $dark-color;
+
+          &:hover {
+            color: $color-primary-600;
+          }
+        }
       }
     }
 
@@ -75,6 +83,16 @@ header {
         justify-content: center;
         align-items: center;
       }
+
+      .contact {
+        display: flex;
+        justify-content: space-around;
+
+        a {
+          color: $dark-color;
+          text-decoration: none;
+        }
+      }
     }
   }
 
@@ -99,6 +117,7 @@ header {
 }
 
 main {
+  overflow: hidden;
   .categorias {
     padding: 1rem;
     .card_banner {
@@ -131,6 +150,7 @@ main {
       grid-area: oferta;
       background-image: url("../img/pratiksha-mohanty-Fxn-syKB7VU-unsplash.jpg");
       background-size: cover;
+      background-position: bottom center;
       height: 260px;
     }
 
@@ -138,6 +158,7 @@ main {
       grid-area: genero;
       background-image: url("../img/reading-mountain.jpg");
       background-size: cover;
+      background-position: bottom center;
       height: 260px;
     }
 
@@ -162,7 +183,7 @@ main {
     &__cards {
       display: flex;
       flex-direction: column;
-      gap: 15px;
+      gap: 1.2rem;
 
       .card {
         display: flex;
@@ -171,7 +192,7 @@ main {
         align-items: center;
 
         overflow: hidden;
-        border: 1px solid $gray-color;
+        border: 2px solid $gray-color;
 
         img {
           width: 100%;
@@ -182,9 +203,8 @@ main {
           padding: 0.8rem 0;
           width: 100%;
           text-align: center;
-          border: 1px solid #b8c5d0;
           box-sizing: border-box;
-          border-bottom: 0;
+          border-bottom: 2px solid $gray-color;
           border-top: 0;
         }
 
@@ -193,7 +213,6 @@ main {
           width: 100%;
           display: flex;
           justify-content: space-between;
-          border: 1px solid #b8c5d0;
           box-sizing: border-box;
 
           .card-precio {
@@ -231,21 +250,19 @@ main {
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
-      height: 100vh;
+      height: 80vh;
 
       background-color: $red-color;
-      background-image: url(../img/img-placeholder-h540.jpg);
+      //background-image: url(../img/img-placeholder-h540.jpg);
+      background-image: url("../img/books/portadas/1984-George\ Orwell-2.jpg");
       background-size: cover;
-      background-position: center center;
+      background-position: top center;
 
       &:first-child {
         background-color: $blue-color;
-
-        /* Otra imagen
-        background-image: url(../img/img-placeholder-h540.jpg);
+        background-image: url("../img/books/portadas/HarryPotter-La\ piedra\ filosofal-\ Rowling.jpg");
         background-size: cover;
-        background-position: center center;
-      */
+        background-position: top center;
       }
     }
 
@@ -265,14 +282,12 @@ main {
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
-      gap: 2rem;
+      gap: 1rem;
 
       .slider__card {
-        height: 260px;
-        width: 260px;
-
         img {
-          width: 100%;
+          height: 300px;
+          width: 230px;
         }
 
         p {

@@ -18,7 +18,8 @@
 .btn-primary-booksarmy {
   background-color: #00ebc7;
   border-color: #00ebc7;
-  color: #00493e;
+  color: #000;
+  font-weight: 500;
 }
 
 .btn-primary-booksarmy:focus {
@@ -83,7 +84,7 @@
 .btn-info-booksarmy {
   background-color: #147dff;
   border-color: #147dff;
-  color: #00214d;
+  color: #fff;
 }
 
 .btn-info-booksarmy:focus {
@@ -108,6 +109,22 @@
 }
 
 .btn-warning-booksarmy:active {
+  -webkit-box-shadow: inset 0 3px 5px rgba(27, 45, 69, 0.125);
+          box-shadow: inset 0 3px 5px rgba(27, 45, 69, 0.125);
+}
+
+.btn-gray-700-booksarmy {
+  background-color: #454f5b;
+  border-color: #454f5b;
+  color: #fff;
+}
+
+.btn-gray-700-booksarmy:focus {
+  -webkit-box-shadow: 0 0 0 3px rgba(69, 79, 91, 0.25);
+          box-shadow: 0 0 0 3px rgba(69, 79, 91, 0.25);
+}
+
+.btn-gray-700-booksarmy:active {
   -webkit-box-shadow: inset 0 3px 5px rgba(27, 45, 69, 0.125);
           box-shadow: inset 0 3px 5px rgba(27, 45, 69, 0.125);
 }
@@ -248,6 +265,15 @@ header .navbar__top-bar .icons {
   display: none;
 }
 
+header .navbar__top-bar .icons a {
+  text-decoration: none;
+  color: #1b2d45;
+}
+
+header .navbar__top-bar .icons a:hover {
+  color: #00cabe;
+}
+
 header .navbar__bottom-bar {
   display: none;
 }
@@ -285,6 +311,19 @@ header .navbar__bottom-bar-mobile #form-mobile {
           align-items: center;
 }
 
+header .navbar__bottom-bar-mobile .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+header .navbar__bottom-bar-mobile .contact a {
+  color: #1b2d45;
+  text-decoration: none;
+}
+
 header .hero {
   height: 75vh;
   display: -webkit-box;
@@ -310,6 +349,10 @@ header .hero .hero__title {
 header .hero .hero__img img {
   width: 100%;
   height: 100%;
+}
+
+main {
+  overflow: hidden;
 }
 
 main .categorias {
@@ -353,6 +396,7 @@ main .categorias .oferta {
   grid-area: oferta;
   background-image: url("../img/pratiksha-mohanty-Fxn-syKB7VU-unsplash.jpg");
   background-size: cover;
+  background-position: bottom center;
   height: 260px;
 }
 
@@ -362,6 +406,7 @@ main .categorias .genero {
   grid-area: genero;
   background-image: url("../img/reading-mountain.jpg");
   background-size: cover;
+  background-position: bottom center;
   height: 260px;
 }
 
@@ -395,7 +440,7 @@ main .recomendaciones__cards {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 15px;
+  gap: 1.2rem;
 }
 
 main .recomendaciones__cards .card {
@@ -413,7 +458,7 @@ main .recomendaciones__cards .card {
       -ms-flex-align: center;
           align-items: center;
   overflow: hidden;
-  border: 1px solid #f2f4f6;
+  border: 2px solid #f2f4f6;
 }
 
 main .recomendaciones__cards .card img {
@@ -425,10 +470,9 @@ main .recomendaciones__cards .card .card-title {
   padding: 0.8rem 0;
   width: 100%;
   text-align: center;
-  border: 1px solid #b8c5d0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border-bottom: 0;
+  border-bottom: 2px solid #f2f4f6;
   border-top: 0;
 }
 
@@ -441,7 +485,6 @@ main .recomendaciones__cards .card .card-footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  border: 1px solid #b8c5d0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -499,20 +542,18 @@ main .articulos__item {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  height: 100vh;
+  height: 80vh;
   background-color: #ff5470;
-  background-image: url(../img/img-placeholder-h540.jpg);
+  background-image: url("../img/books/portadas/1984-George Orwell-2.jpg");
   background-size: cover;
-  background-position: center center;
+  background-position: top center;
 }
 
 main .articulos__item:first-child {
   background-color: #00214d;
-  /* Otra imagen
-        background-image: url(../img/img-placeholder-h540.jpg);
-        background-size: cover;
-        background-position: center center;
-      */
+  background-image: url("../img/books/portadas/HarryPotter-La piedra filosofal- Rowling.jpg");
+  background-size: cover;
+  background-position: top center;
 }
 
 main .articulos__card {
@@ -537,16 +578,12 @@ main .ofertas-increibles__slider {
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 2rem;
-}
-
-main .ofertas-increibles__slider .slider__card {
-  height: 260px;
-  width: 260px;
+  gap: 1rem;
 }
 
 main .ofertas-increibles__slider .slider__card img {
-  width: 100%;
+  height: 300px;
+  width: 230px;
 }
 
 main .ofertas-increibles__slider .slider__card p {

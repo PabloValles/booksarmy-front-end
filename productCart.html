@@ -32,9 +32,7 @@
         <nav class="navbar">
           <div class="navbar__top-bar">
             <div class="logo">
-              <a href="index.html">
-                <img src="img/logos/Logo 6-green.svg" alt="" />
-              </a>
+              <img src="img/logos/Logo 6-green.svg" alt="" />
             </div>
             <div class="form">
               <input
@@ -48,11 +46,13 @@
               </button>
             </div>
             <div class="icons">
-              <i class="fa fa-shopping-cart fa-lg" aria-hidden="true"></i>
+              <a href="productCart.html"
+                ><i class="fa fa-shopping-cart fa-lg" aria-hidden="true"></i
+              ></a>
               <i class="fa-solid fa-bell fa-lg"></i>
               <i class="fa fa-user fa-lg" aria-hidden="true"></i>
             </div>
-            <button class="btn btn-primary-booksarmy" id="btn-navbar">
+            <button class="btn btn-primary" id="btn-navbar">
               <i class="fa-solid fa-bars"></i>
             </button>
           </div>
@@ -65,8 +65,10 @@
               <a href="#">Contacto</a>
             </div>
             <div class="contact">
-              <a href="#"><i class="fas fa-phone fa-md"></i> telefono</a>
-              <a href="#"><i class="fas fa-mail-bulk fa-md"></i> email</a>
+              <a href="login.html"><i class="fas fa-sign-in"></i> Ingresar</a>
+              <a href="register.html"
+                ><i class="fas fa-address-book"></i> Crear cuenta</a
+              >
             </div>
           </div>
           <div class="navbar__bottom-bar-mobile">
@@ -84,9 +86,15 @@
                 id="search"
                 placeholder="Buscar libors, autores, géneros..."
               />
-              <button class="btn btn-default">
+              <button class="btn">
                 <i class="fas fa-search fa-lg"></i>
               </button>
+            </div>
+            <div class="contact">
+              <a href="login.html"><i class="fas fa-sign-in"></i> Ingresar</a>
+              <a href="register.html"
+                ><i class="fas fa-address-book"></i> Crear cuenta</a
+              >
             </div>
           </div>
         </nav>
@@ -199,7 +207,7 @@
               <a href="index.html" class="link-secondary"
                 >Continuar comprando</a
               >
-              <button type="submit" class="btn btn-success-booksarmy">
+              <button type="submit" class="btn btn-primary-booksarmy">
                 Finalizar compra
               </button>
             </div>
@@ -211,7 +219,7 @@
     <footer class="container">
       <div class="footer-top">
         <div class="footer-top__log">
-          <img src="img/Logo 5.svg" alt="" />
+          <img src="img/logos/Logo 6-green.svg" alt="" />
         </div>
         <div class="footer-top__links">
           <a href="#">Inicio</a>
