@@ -1,0 +1,28 @@
+[93m[WARN 04:22:26.765410][0m [Preferences:192] '/usr/share/plank/themes/Transparent/dock.theme' is read-only!
+[93m[WARN 04:22:26.765623][0m [Preferences:378] Missing key 'OuterStrokeColor' for group 'PlankTheme' in preferences file '/usr/share/plank/themes/Transparent/dock.theme' - using default value
+[93m[WARN 04:22:26.765659][0m [Preferences:378] Missing key 'FillStartColor' for group 'PlankTheme' in preferences file '/usr/share/plank/themes/Transparent/dock.theme' - using default value
+[93m[WARN 04:22:26.765692][0m [Preferences:378] Missing key 'FillEndColor' for group 'PlankTheme' in preferences file '/usr/share/plank/themes/Transparent/dock.theme' - using default value
+[93m[WARN 04:22:26.765724][0m [Preferences:378] Missing key 'InnerStrokeColor' for group 'PlankTheme' in preferences file '/usr/share/plank/themes/Transparent/dock.theme' - using default value
+[93m[WARN 04:22:26.765755][0m [Preferences:378] Missing key 'HorizPadding' for group 'PlankDockTheme' in preferences file '/usr/share/plank/themes/Transparent/dock.theme' - using default value
+[93m[WARN 04:22:26.765810][0m [Preferences:378] Missing key 'ItemPadding' for group 'PlankDockTheme' in preferences file '/usr/share/plank/themes/Transparent/dock.theme' - using default value
+[93m[WARN 04:22:26.765842][0m [Preferences:378] Missing key 'IndicatorSize' for group 'PlankDockTheme' in preferences file '/usr/share/plank/themes/Transparent/dock.theme' - using default value
+[93m[WARN 04:22:26.765875][0m [Preferences:378] Missing key 'IconShadowSize' for group 'PlankDockTheme' in preferences file '/usr/share/plank/themes/Transparent/dock.theme' - using default value
+[93m[WARN 04:22:26.765906][0m [Preferences:378] Missing key 'UrgentBounceHeight' for group 'PlankDockTheme' in preferences file '/usr/share/plank/themes/Transparent/dock.theme' - using default value
+[93m[WARN 04:22:26.765938][0m [Preferences:378] Missing key 'LaunchBounceHeight' for group 'PlankDockTheme' in preferences file '/usr/share/plank/themes/Transparent/dock.theme' - using default value
+[93m[WARN 04:22:26.765969][0m [Preferences:378] Missing key 'FadeOpacity' for group 'PlankDockTheme' in preferences file '/usr/share/plank/themes/Transparent/dock.theme' - using default value
+[93m[WARN 04:22:26.765999][0m [Preferences:378] Missing key 'ClickTime' for group 'PlankDockTheme' in preferences file '/usr/share/plank/themes/Transparent/dock.theme' - using default value
+[93m[WARN 04:22:26.766029][0m [Preferences:378] Missing key 'UrgentBounceTime' for group 'PlankDockTheme' in preferences file '/usr/share/plank/themes/Transparent/dock.theme' - using default value
+[93m[WARN 04:22:26.766069][0m [Preferences:378] Missing key 'LaunchBounceTime' for group 'PlankDockTheme' in preferences file '/usr/share/plank/themes/Transparent/dock.theme' - using default value
+[93m[WARN 04:22:26.766101][0m [Preferences:378] Missing key 'ActiveTime' for group 'PlankDockTheme' in preferences file '/usr/share/plank/themes/Transparent/dock.theme' - using default value
+[93m[WARN 04:22:26.766133][0m [Preferences:378] Missing key 'SlideTime' for group 'PlankDockTheme' in preferences file '/usr/share/plank/themes/Transparent/dock.theme' - using default value
+[93m[WARN 04:22:26.766164][0m [Preferences:378] Missing key 'FadeTime' for group 'PlankDockTheme' in preferences file '/usr/share/plank/themes/Transparent/dock.theme' - using default value
+[93m[WARN 04:22:26.766194][0m [Preferences:378] Missing key 'HideTime' for group 'PlankDockTheme' in preferences file '/usr/share/plank/themes/Transparent/dock.theme' - using default value
+[93m[WARN 04:22:26.766224][0m [Preferences:378] Missing key 'GlowSize' for group 'PlankDockTheme' in preferences file '/usr/share/plank/themes/Transparent/dock.theme' - using default value
+[93m[WARN 04:22:26.766254][0m [Preferences:378] Missing key 'GlowTime' for group 'PlankDockTheme' in preferences file '/usr/share/plank/themes/Transparent/dock.theme' - using default value
+[93m[WARN 04:22:26.766285][0m [Preferences:378] Missing key 'GlowPulseTime' for group 'PlankDockTheme' in preferences file '/usr/share/plank/themes/Transparent/dock.theme' - using default value
+[93m[WARN 04:22:26.766378][0m [Preferences:378] Missing key 'UrgentHueShift' for group 'PlankDockTheme' in preferences file '/usr/share/plank/themes/Transparent/dock.theme' - using default value
+[93m[WARN 04:22:26.766410][0m [Preferences:378] Missing key 'ItemMoveTime' for group 'PlankDockTheme' in preferences file '/usr/share/plank/themes/Transparent/dock.theme' - using default value
+[93m[WARN 04:22:26.766440][0m [Preferences:378] Missing key 'CascadeHide' for group 'PlankDockTheme' in preferences file '/usr/share/plank/themes/Transparent/dock.theme' - using default value
+[93m[WARN 04:22:26.766471][0m [Preferences:378] Missing key 'BadgeColor' for group 'PlankDockTheme' in preferences file '/usr/share/plank/themes/Transparent/dock.theme' - using default value
+[93m[WARN 04:22:26.916595][0m Creating surface took WAY TOO LONG (49ms), enabled downscaling for this cache!
+[93m[WARN 04:22:42.928493][0m [AbstractMain:42] Caught signal (15), exiting

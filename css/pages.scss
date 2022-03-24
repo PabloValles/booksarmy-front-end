@@ -1,0 +1,128 @@
+@import "_mixins.scss";
+@import "_base.scss";
+
+header {
+  position: relative;
+  .hero-pages {
+    height: 520px;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-image: url(../img/overlay.svg), url(../img/bg-hero2.jpg);
+
+    .hero-flex {
+      padding: 0 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+
+      .hero__title {
+        text-align: center;
+        padding: 0 2rem;
+
+        img {
+          display: none;
+        }
+
+        h1 {
+          font-weight: 600;
+          padding-top: 5rem;
+          color: #fff;
+        }
+        p {
+          color: #fff;
+        }
+      }
+
+      @include md {
+        justify-content: flex-start;
+        .hero__title {
+          text-align: left;
+
+          img {
+            display: block;
+            width: 100px;
+          }
+          h1 {
+            padding-top: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+nav.navbar {
+  background-color: #fff;
+
+  .navbar__bottom-bar-mobile {
+    background-color: #fff;
+
+    .form-mobile {
+      padding: 0 1rem;
+      input#search {
+        width: 100%;
+      }
+    }
+  }
+}
+
+main {
+  section.cart-table {
+    height: 100%;
+    padding: 6rem 0;
+
+    .table-responsive {
+      margin-top: 1.5rem;
+
+      thead tr {
+        border-bottom: 2px solid $color-gray-400 !important;
+      }
+    }
+
+    #checkout {
+      padding-top: 1.5rem;
+      @include md {
+        text-align: right;
+        padding-top: 0;
+      }
+    }
+  }
+
+  section.book {
+    background-color: $gray-color;
+    padding: 2rem 1rem;
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      text-align: center;
+      padding: 2rem 1rem;
+
+      .book-portada {
+        height: 60vh;
+        width: 100%;
+
+        img {
+          width: 100%;
+        }
+      }
+      .book-descripcion {
+        .book-descripcion-precio {
+          margin: 1rem 0;
+        }
+        .book-descripcion-resumen {
+          text-align: justify;
+        }
+        .book-descripcion-cantidad {
+          padding: 2rem 0;
+        }
+      }
+    }
+  }
+
+  section.book-author {
+    padding: 2rem 1rem;
+  }
+}
