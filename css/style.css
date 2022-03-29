@@ -9,10 +9,10 @@
   line-height: 1.5;
   border-radius: 0.25rem;
   border: 1px solid transparent;
-  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
 }
 
 .btn-primary-booksarmy {
@@ -387,7 +387,7 @@ main .categorias .container {
   -ms-grid-rows: (1fr)[4];
       grid-template-rows: repeat(4, 1fr);
   gap: 0px 0px;
-      grid-template-areas: "oferta" "genero" "vendidos" "colecciones";
+      grid-template-areas: "oferta" "genero" "vendidos" "colecciones";
 }
 
 main .categorias .oferta {
@@ -802,7 +802,7 @@ footer .footer-bottom__copy {
         grid-template-rows: 1fr 1fr;
     gap: 10px 10px;
     grid-auto-flow: row;
-        grid-template-areas: "oferta genero vendidos" "colecciones colecciones vendidos";
+        grid-template-areas: "oferta genero vendidos" "colecciones colecciones vendidos";
   }
   main .categorias .oferta {
     -ms-grid-row: 1;
