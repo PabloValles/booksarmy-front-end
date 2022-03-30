@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 /** Colores **/
+/* Margenes */
+.ml-1 {
+  margin-left: 1rem;
+}
+
 .btn {
   font-size: 1rem;
   padding: 0.375rem 0.75rem;
@@ -196,6 +201,26 @@ small,
   display: none;
 }
 
+@-webkit-keyframes display-on {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+@keyframes display-on {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
 header {
   position: relative;
 }
@@ -346,6 +371,15 @@ header .hero .hero__title {
   text-align: center;
 }
 
+header .hero .hero__title a {
+  text-decoration: none;
+  font-weight: 500;
+}
+
+header .hero .hero__title a.ml-1 {
+  color: #00214d;
+}
+
 header .hero .hero__img img {
   width: 100%;
   height: 100%;
@@ -429,7 +463,12 @@ main .categorias .colecciones {
 }
 
 main .recomendaciones {
-  padding: 1rem;
+  background: #f2f4f6;
+  padding: 2rem;
+}
+
+main .recomendaciones h2 {
+  font-weight: 500;
 }
 
 main .recomendaciones__cards {
@@ -440,7 +479,7 @@ main .recomendaciones__cards {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 1.2rem;
+  gap: 2rem;
 }
 
 main .recomendaciones__cards .card {
@@ -458,26 +497,38 @@ main .recomendaciones__cards .card {
       -ms-flex-align: center;
           align-items: center;
   overflow: hidden;
-  border: 2px solid #f2f4f6;
+  position: relative;
+  background-color: #fff;
+  border-radius: 1rem;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+main .recomendaciones__cards .card:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 4px 16px 19px -3px rgba(0, 0, 0, 0.1);
+          box-shadow: 4px 16px 19px -3px rgba(0, 0, 0, 0.1);
 }
 
 main .recomendaciones__cards .card img {
   width: 100%;
+  position: relative;
 }
 
 main .recomendaciones__cards .card .card-title {
   margin: 0;
-  padding: 0.8rem 0;
+  padding: 0.8rem 1rem;
   width: 100%;
   text-align: center;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-bottom: 2px solid #f2f4f6;
   border-top: 0;
+  font-weight: 500;
 }
 
 main .recomendaciones__cards .card .card-footer {
-  padding: 0.8rem 0;
+  padding: 0.8rem 0.5rem;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -509,13 +560,24 @@ main .recomendaciones__cards .card .card-footer .card-icons {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 0 1rem;
+  gap: 0 0.8rem;
+}
+
+main .recomendaciones__cards .card .card-footer .card-icons a {
+  text-decoration: none;
+  color: inherit;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+main .recomendaciones__cards .card .card-footer .card-icons a:hover {
+  color: #00a3a9;
 }
 
 main .articulos {
@@ -544,16 +606,16 @@ main .articulos__item {
           justify-content: flex-end;
   height: 80vh;
   background-color: #ff5470;
-  background-image: url("../img/books/portadas/1984-George Orwell-2.jpg");
+  background-image: url("../img/emil-widlund-xrbbXIXAWY0-unsplash.jpg");
   background-size: cover;
   background-position: top center;
 }
 
 main .articulos__item:first-child {
   background-color: #00214d;
-  background-image: url("../img/books/portadas/HarryPotter-La piedra filosofal- Rowling.jpg");
+  background-image: url("../img/reading-mountain.jpg");
   background-size: cover;
-  background-position: top center;
+  background-position: center center;
 }
 
 main .articulos__card {
@@ -827,25 +889,25 @@ footer .footer-bottom__copy {
     grid-area: colecciones;
   }
   main .recomendaciones__cards {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    gap: 0.5rem;
+    gap: 1.5rem;
   }
   main .recomendaciones__cards .card {
-    width: 32%;
+    width: 48%;
   }
   main .recomendaciones__cards .card .card-title {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
   main .recomendaciones__cards .card .card-footer {
-    padding: 0.5rem;
+    padding: 0.5rem 2rem;
   }
   main .recomendaciones__cards .card .card-footer .card-precio,
   main .recomendaciones__cards .card .card-footer .card-icons {
@@ -1003,6 +1065,42 @@ footer .footer-bottom__copy {
             order: -1;
     width: 45%;
   }
+  main .recomendaciones__cards {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem 0;
+  }
+  main .recomendaciones__cards .card {
+    padding: 1rem 0;
+    width: 30%;
+  }
+  main .recomendaciones__cards .card:hover .card-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-animation: display-on 0.5s ease-in-out both;
+            animation: display-on 0.5s ease-in-out both;
+  }
+  main .recomendaciones__cards .card .card-title {
+    border-bottom: 0;
+  }
+  main .recomendaciones__cards .card .card-footer {
+    visibility: hidden;
+    padding: 0.5rem 2rem;
+  }
+  main .recomendaciones__cards .card .card-footer .card-precio,
+  main .recomendaciones__cards .card .card-footer .card-icons {
+    padding: 0;
+  }
+  main .recomendaciones__cards .card .card-footer .card-icons {
+    gap: 0.5rem;
+  }
   main .call-to-action {
     margin-top: 4rem;
     padding: 4rem 1rem;
@@ -1034,13 +1132,19 @@ footer .footer-bottom__copy {
 }
 
 @media (min-width: 1200px) {
+  main .categorias {
+    padding: 5rem 0;
+  }
+  main .recomendaciones {
+    padding: 5rem 0;
+  }
   main .articulos {
-    padding: 2rem 0;
-    margin: 4rem 0;
+    padding: 0;
+    margin: 0;
     width: 100%;
   }
   main .articulos__item {
-    height: 75vh;
+    height: 50vh;
     border: none;
     width: 100%;
   }
