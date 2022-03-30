@@ -32,7 +32,7 @@
         <nav class="navbar">
           <div class="navbar__top-bar">
             <div class="logo">
-              <img src="img/logos/Logo 6-green.svg" alt="" />
+              <img src="./img/logos/Logo 6-green.svg" alt="" />
             </div>
             <div class="form">
               <input
@@ -103,7 +103,7 @@
       <div class="hero-pages">
         <div class="container hero-flex">
           <div class="hero__title">
-            <img src="img/book.png" alt="" />
+            <img src="./img/book.png" alt="" />
             <h1>Nombre del Libro</h1>
             <p>Autor: Nombre y apellido del autor</p>
           </div>
@@ -117,12 +117,15 @@
           <div class="book-portada">
             <h2 class="titulo">Nombre del libro</h2>
             <div class="imagen">
-              <img src="./img/books/mockups/codigo-davinci.png" alt="Libros" />
+              <img
+                src="././img/books/mockups/codigo-davinci.png"
+                alt="Libros"
+              />
             </div>
           </div>
 
           <div class="book-descripcion">
-            <h1 class="book-descripcion-title">Nombre del libro</h1>
+            <h2 class="book-descripcion-title">Nombre del libro</h2>
             <p>Autor</p>
 
             <div class="book-descripcion-estrellas">
@@ -132,6 +135,7 @@
               <i class="fa fa-star" aria-hidden="true"></i>
               <i class="fa fa-star-half" aria-hidden="true"></i>
             </div>
+
             <h2 class="book-descripcion-precio">$1.100</h2>
 
             <p class="book-descripcion-resumen">
@@ -143,15 +147,7 @@
 
             <div class="book-descripcion-cantidad">
               <p>Cantidad</p>
-              <div class="input-group">
-                <button class="btn btn-secondary" type="button">-</button>
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="cantidad"
-                />
-                <button class="btn btn-secondary" type="button">+</button>
-              </div>
+              <input type="number" />
             </div>
 
             <div class="book-descripcion-links mt-3">
@@ -166,22 +162,238 @@
         <div class="container">
           <div class="book-author-detalles">
             <h2 class="dato-libro">Datos del libro</h2>
-            <p class="editorial">Editorial:</p>
-            <br />
-            <p class="tematica">Temática:</p>
-            <br />
-            <p class="fecha">Fecha de publicación:</p>
-            <br />
-            <p class="resumen">
-              Resumen: <br />Lorem ipsum dolor sit amet, consectetur adipisicing
-              elit. Libero et corporis officia quae blanditiis obcaecati at
-              consequatur soluta eos modi ab mollitia facilis tempora veniam
-              voluptate voluptatibus, quas nemo harum?
-            </p>
-            <br />
-            <p class="formato">Formato e idioma</p>
-            <br />
-            <p class="isbn">ISBN</p>
+
+            <div class="accordion accordion-flush" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    # Editorial:
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse show"
+                  aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <strong>Nombre de la editorial del libro.</strong> Lorem
+                    ipsum dolor sit amet consectetur adipisicing elit. Itaque
+                    impedit inventore totam. Provident ipsa temporibus.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    # Temática:
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <strong>Temática del libro.</strong>
+                    It is hidden by default, until the collapse plugin adds the
+                    appropriate classes that we use...
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    # Fecha de publicación:
+                  </button>
+                </h2>
+                <div
+                  id="collapseThree"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <strong>Fecha de publicación: </strong> Resumen ...
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="acordion-sinopsis">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseSinopsis"
+                    aria-expanded="false"
+                    aria-controls="collapseSinopsis"
+                  >
+                    # Sinopsis del libro:
+                  </button>
+                </h2>
+                <div
+                  id="collapseSinopsis"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="acordion-sinopsis"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <strong>Sinopsis: </strong> Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Hic qui ab consequatur facilis
+                    porro officiis fuga consectetur similique cupiditate,
+                    aliquid, magnam temporibus aperiam eaque rem ipsum inventore
+                    architecto. Harum, qui?
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="accordion-formato">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFormato"
+                    aria-expanded="false"
+                    aria-controls="collapseFormato"
+                  >
+                    # Formato e idioma
+                  </button>
+                </h2>
+                <div
+                  id="collapseFormato"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="accordion-formato"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <strong>Formato e idioma: </strong> Lorem ipsum dolor sit
+                    amet consectetur adipisicing.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="accordion-isbn">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseIsbn"
+                    aria-expanded="false"
+                    aria-controls="collapseIsbn"
+                  >
+                    # ISBN
+                  </button>
+                </h2>
+                <div
+                  id="collapseIsbn"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="accordion-formato"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <strong>ISBN: </strong> 4546456 316ASDQW
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="book-author-biography">
+        <div class="container">
+          <div class="author-bio">
+            <div class="author-bio_img">
+              <img
+                src="https://via.placeholder.com/550"
+                alt="Imágen del autor"
+              />
+            </div>
+            <div class="author-bio_desc">
+              <h3>Nombre y apellido del autor</h3>
+              <h5>Fecha de nacimiento</h5>
+
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum
+                aliquid vel quaerat beatae qui at incidunt quos. Nemo minus odio
+                optio. Maxime, soluta. Optio, maiores quos repellendus
+                repudiandae ea blanditiis.
+              </p>
+
+              <a href="#" class="btn btn-warning-booksarmy">Conocé más...</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="book-anothers">
+        <div class="container">
+          <h2>Otros libros que pueden gustarte</h2>
+          <div class="slider-cards">
+            <a href="" class="slider-cards_item">
+              <img
+                src="./img/books/portadas/El principito - Antoine de Saint-Exupery.jpg"
+                alt="Slider 1"
+              />
+              <p>Librsadsadsadsadsao</p>
+            </a>
+            <a href="" class="slider-cards_item">
+              <img
+                src="./img/books/portadas/Diario de Anne Frank.jpg"
+                alt="Slider 1"
+              />
+              <p>Libro</p>
+            </a>
+            <a href="" class="slider-cards_item">
+              <img
+                src="./img/books/portadas/Rayuela-Cortazar.jpg"
+                alt="Slider 1"
+              />
+              <p>Libro</p>
+            </a>
+            <a href="" class="slider-cards_item">
+              <img
+                src="./img/books/portadas/Don Quijote de la Mancha-Miguel de Cervantes-2.jpg"
+                alt="Slider 1"
+              />
+              <p>Libro</p>
+            </a>
+            <a href="" class="slider-cards_item">
+              <img
+                src="./img/books/portadas/El principito - Antoine de Saint-Exupery.jpg"
+                alt="Slider 1"
+              />
+              <p>Libro</p>
+            </a>
+            <a href="" class="slider-cards_item">
+              <img
+                src="./img/books/portadas/HarryPotter-La piedra filosofal- Rowling.jpg"
+                alt="Slider 1"
+              />
+              <p>Libro</p>
+            </a>
           </div>
         </div>
       </section>
@@ -190,7 +402,7 @@
     <footer class="container">
       <div class="footer-top">
         <div class="footer-top__log">
-          <img src="img/logos/Logo 6-green.svg" alt="" />
+          <img src="./img/logos/Logo 6-green.svg" alt="" />
         </div>
         <div class="footer-top__links">
           <a href="#">Inicio</a>

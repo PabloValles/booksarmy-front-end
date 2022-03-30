@@ -101,7 +101,7 @@ main {
       padding: 2rem 1rem;
 
       .book-portada {
-        height: 60vh;
+        height: 100%;
         width: 100%;
 
         img {
@@ -109,6 +109,9 @@ main {
         }
       }
       .book-descripcion {
+        h2 {
+          display: none;
+        }
         .book-descripcion-precio {
           margin: 1rem 0;
         }
@@ -124,5 +127,131 @@ main {
 
   section.book-author {
     padding: 2rem 1rem;
+
+    #accordionExample {
+      font-family: Poppins, helvetica, sans-serif;
+      margin-top: 1.5rem;
+
+      .accordion-item {
+        button:active {
+          outline: none;
+          border: 0;
+        }
+      }
+    }
+  }
+
+  section.book-author-biography {
+    background-color: $blue-color;
+    color: $white-color;
+    padding: 5rem 1rem;
+
+    .author-bio {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+
+      &_img img {
+        width: 100%;
+      }
+
+      &_desc {
+        padding: 1rem 0;
+
+        p {
+          margin: 2rem 0;
+        }
+      }
+    }
+  }
+
+  section.book-anothers {
+    background-color: $gray-color;
+    color: $blue-color;
+    padding: 5rem 0;
+
+    .slider-cards {
+      padding: 1rem 0;
+      display: flex;
+      gap: 1rem;
+
+      &_item {
+        position: relative;
+        width: 250px;
+
+        img {
+          width: 250px;
+          height: 100%;
+        }
+
+        p {
+          color: $blue-color;
+          position: absolute;
+          bottom: 1rem;
+          left: 0;
+          background-color: #fff;
+          padding: 0.8rem 1rem;
+          margin-bottom: 0;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $grid-breakpoint-md) {
+  main {
+    section.book {
+      background-color: $gray-color;
+      padding: 2rem 1rem;
+
+      .container {
+        flex-wrap: nowrap;
+        align-items: center;
+        text-align: left;
+        padding: 2rem 1rem;
+
+        .book-portada {
+          width: 40%;
+          h2 {
+            display: none;
+          }
+
+          img {
+            width: 100%;
+          }
+        }
+        .book-descripcion {
+          width: 60%;
+          h2 {
+            display: block;
+          }
+        }
+      }
+    }
+
+    section.book-author-biography {
+      .author-bio {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+
+        &_img img {
+          width: 100%;
+        }
+
+        &_desc {
+          padding: 1rem 0;
+
+          p {
+            margin: 2rem 0;
+          }
+        }
+      }
+    }
   }
 }

@@ -124,12 +124,16 @@ main section.book .container {
 }
 
 main section.book .container .book-portada {
-  height: 60vh;
+  height: 100%;
   width: 100%;
 }
 
 main section.book .container .book-portada img {
   width: 100%;
+}
+
+main section.book .container .book-descripcion h2 {
+  display: none;
 }
 
 main section.book .container .book-descripcion .book-descripcion-precio {
@@ -146,5 +150,141 @@ main section.book .container .book-descripcion .book-descripcion-cantidad {
 
 main section.book-author {
   padding: 2rem 1rem;
+}
+
+main section.book-author #accordionExample {
+  font-family: Poppins, helvetica, sans-serif;
+  margin-top: 1.5rem;
+}
+
+main section.book-author #accordionExample .accordion-item button:active {
+  outline: none;
+  border: 0;
+}
+
+main section.book-author-biography {
+  background-color: #00214d;
+  color: #fffffe;
+  padding: 5rem 1rem;
+}
+
+main section.book-author-biography .author-bio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+}
+
+main section.book-author-biography .author-bio_img img {
+  width: 100%;
+}
+
+main section.book-author-biography .author-bio_desc {
+  padding: 1rem 0;
+}
+
+main section.book-author-biography .author-bio_desc p {
+  margin: 2rem 0;
+}
+
+main section.book-anothers {
+  background-color: #f2f4f6;
+  color: #00214d;
+  padding: 5rem 0;
+}
+
+main section.book-anothers .slider-cards {
+  padding: 1rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+}
+
+main section.book-anothers .slider-cards_item {
+  position: relative;
+  width: 250px;
+}
+
+main section.book-anothers .slider-cards_item img {
+  width: 250px;
+  height: 100%;
+}
+
+main section.book-anothers .slider-cards_item p {
+  color: #00214d;
+  position: absolute;
+  bottom: 1rem;
+  left: 0;
+  background-color: #fff;
+  padding: 0.8rem 1rem;
+  margin-bottom: 0;
+  font-weight: 500;
+}
+
+@media (min-width: 768px) {
+  main section.book {
+    background-color: #f2f4f6;
+    padding: 2rem 1rem;
+  }
+  main section.book .container {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: left;
+    padding: 2rem 1rem;
+  }
+  main section.book .container .book-portada {
+    width: 40%;
+  }
+  main section.book .container .book-portada h2 {
+    display: none;
+  }
+  main section.book .container .book-portada img {
+    width: 100%;
+  }
+  main section.book .container .book-descripcion {
+    width: 60%;
+  }
+  main section.book .container .book-descripcion h2 {
+    display: block;
+  }
+  main section.book-author-biography .author-bio {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 3rem;
+  }
+  main section.book-author-biography .author-bio_img img {
+    width: 100%;
+  }
+  main section.book-author-biography .author-bio_desc {
+    padding: 1rem 0;
+  }
+  main section.book-author-biography .author-bio_desc p {
+    margin: 2rem 0;
+  }
 }
 /*# sourceMappingURL=pages.css.map */
